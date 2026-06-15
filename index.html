@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Home Training Nahusam</title>
+    <style>
+        :root {
+            /* Perubahan tema warna ke kombinasi Merah & Oranye Nahusam */
+            --primary-color: #d97706; /* Oranye Terang */
+            --secondary-color: #dc2626; /* Merah Menyala */
+            --bg-gradient: linear-gradient(135deg, #b91c1c, #ea580c, #f97316); /* Background Gradasi */
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', -apple-system, sans-serif;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-main);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative; /* Agar posisi logo bisa menempel pas di kanan atas */
+            overflow: hidden;
+        }
+
+        /* Kode untuk memposisikan logo Nahusam di pojok kanan atas */
+        .club-logo {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 55px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        h1 {
+            text-align: left;
+            color: #b91c1c; /* Judul warna merah tua */
+            margin-bottom: 4px;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding-right: 65px; /* Biar judul tidak tabrakan dengan logo */
+            font-weight: 800;
+        }
+
+        .subtitle {
+            text-align: left;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .schedule-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .day-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #fafafa;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .day-header {
+            background: linear-gradient(90deg, #b91c1c, #ea580c); /* Header kartu gradasi merah-oranye */
+            color: white;
+            padding: 10px 14px;
+            font-weight: bold;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .day-time {
+            font-size: 11px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2px 8px;
+            border-radius: 12px;
+        }
+
+        .day-body {
+            padding: 14px;
+        }
+
+        .exercise-list {
+            list-style: none;
+            margin-bottom: 12px;
+        }
+
+        .exercise-list li {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 6px;
+            color: #374151;
+        }
+
+        .video-buttons-container {
+            display: flex;
+            gap: 8px;
+            margin-top: 5px;
+        }
+
+        .btn-video {
+            flex: 1;
+            background: linear-gradient(135deg, #ea580c, #dc2626); /* Tombol gradasi oranye ke merah */
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.2s, opacity 0.2s;
+            box-shadow: 0 3px 6px rgba(234, 88, 12, 0.2);
+        }
+
+        .btn-video:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="logo.png" alt="Logo Nahusam" class="club-logo">
+
+    <h1>HOME TRAINING NAHUSAM</h1>
+    <div class="subtitle">Waktu Latihan: 06.00 - 07.00 WIB</div>
+
+    <div class="schedule-grid">
+        
+        <div class="day-card">
+            <div class="day-header"><span>SENIN</span><span class="day-time">06.00 - 07.00</span></div>
+            <div class="day-body">
+                <ul class="exercise-list">
+                    <li>1. Pemanasan Dinamis (5 menit)</li>
+                    <li>2. Skipping/lompat tali (10 menit)</li>
+                    <li>3. <b>Ball Feeling 1:</b> 10 menit (5 sesi x 2 menit)</li>
+                    <li>4. <b>Ball Feeling 2:</b> 10 menit (5 sesi x 2 menit)</li>
+                    <li>5. Cooling down/pendinginan (5 menit)</li>
+                </ul>
+                <div class="video-buttons-container">
+                    <a class="btn-video" href="https://videotourl.com/videos/1781435409498-dd07c778-7b9b-447d-b1c8-8c3faa8191ce.mp4" target="_blank">🎬 Video BF 1</a>
+                    <a class="btn-video" href="https://videotourl.com/videos/1781435327893-17e84dac-24fc-498a-b81b-21439fa34b62.mp4" target="_blank">🎬 Video BF 2</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header"><span>SELASA</span><span class="day-time">06.00 - 07.00</span></div>
+            <div class="day-body">
+                <ul class="exercise-list">
+                    <li>1. Pemanasan Dinamis (5 menit)</li>
+                    <li>2. Skipping/lompat tali (10 menit)</li>
+                    <li>3. <b>Ball Feeling 1:</b> 10 menit (5 sesi x 2 menit, 1 mnt kiri / 1 mnt kanan)</li>
+                    <li>4. <b>Ball Feeling 2:</b> 10 menit (5 sesi x 2 menit, 1 mnt kiri / 1 mnt kanan)</li>
+                    <li>5. Cooling down/pendinginan (5 menit)</li>
+                </ul>
+                <div class="video-buttons-container">
+                    <a class="btn-video" href="https://videotourl.com/videos/1781435522865-602b6c5c-a40e-48d3-b682-16f184579055.mp4" target="_blank">🎬 Video BF 1</a>
+                    <a class="btn-video" href="https://videotourl.com/videos/1781435591665-23246e06-5093-4047-b690-3e1e3c29e123.mp4" target="_blank">🎬 Video BF 2</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header"><span>RABU</span><span class="day-time">06.00 - 07.00</span></div>
+            <div class="day-body">
+                <ul class="exercise-list">
+                    <li>1. Pemanasan Dinamis (5 menit)</li>
+                    <li>2. Skipping/lompat tali (10 menit)</li>
+                    <li>3. <b>Ball Feeling 1:</b> 10 menit (5 sesi x 2 menit)</li>
+                    <li>4. <b>Ball Feeling 2:</b> 10 menit (5 sesi x 2 menit)</li>
+                    <li>5. Cooling down/pendinginan (5 menit)</li>
+                </ul>
+                <div class="video-buttons-container">
+                    <a class="btn-video" href="https://videotourl.com/videos/1781435676377-caba0fbb-b927-47cb-a36b-ec0d9d14b930.mp4" target="_blank">🎬 Video BF 1</a>
+                    <a class="btn-video" href="https://videotourl.com/videos/1781435719893-910f5984-686c-440c-beaf-4d9195cdc72b.mp4" target="_blank">🎬 Video BF 2</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header"><span>KAMIS</span><span class="day-time">06.00 - 07.00</span></div>
+            <div class="day-body">
+                <ul class="exercise-list">
+                    <li>1. Pemanasan Dinamis (5 menit)</li>
+                    <li>2. Skipping/lompat tali (10 menit)</li>
+                    <li>3. <b>Ball Feeling 1:</b> 10 menit (5 sesi x 2 menit)</li>
+                    <li>4. <b>Ball Feeling 2:</b> 10 menit (5 sesi x 2 menit)</li>
+                    <li>5. Cooling down/pendinginan (5 menit)</li>
+                </ul>
+                <div class="video-buttons-container">
+                    <a class="btn-video" href="https://videotourl.com/videos/1781435776992-81d26e26-d99e-4e85-a99a-6553fa147dfc.mp4" target="_blank">🎬 Video BF 1</a>
+                    <a class="btn-video" href="https://videotourl.com/videos/1781435808292-edb7f021-5aec-47f4-b1b2-126b814efde7.mp4" target="_blank">🎬 Video BF 2</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header"><span>JUMAT</span><span class="day-time">06.00 - 07.00</span></div>
+            <div class="day-body">
+                <ul class="exercise-list">
+                    <li>1. Pemanasan Dinamis (5 menit)</li>
+                    <li>2. Skipping/lompat tali (10 menit)</li>
+                    <li>3. <b>Ball Feeling 1:</b> 10 menit (5 sesi x 2 menit)</li>
+                    <li>4. <b>Ball Feeling 2:</b> 10 menit (5 sesi x 2 menit, 1 mnt kiri / 1 mnt kanan)</li>
+                    <li>5. Cooling down/pendinginan (5 menit)</li>
+                </ul>
+                <div class="video-buttons-container">
+                    <a class="btn-video" href="https://videotourl.com/videos/1781435864090-792eaebc-5b58-4e36-8345-f7af1522bc87.mp4" target="_blank">🎬 Video BF 1</a>
+                    <a class="btn-video" href="https://videotourl.com/videos/1781435903065-af80a77c-8cab-4fda-bde8-40e8a3c5f721.mp4" target="_blank">🎬 Video BF 2</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header"><span>SABTU</span><span class="day-time">06.00 - 07.00</span></div>
+            <div class="day-body">
+                <ul class="exercise-list">
+                    <li>1. Pemanasan Dinamis (5 menit)</li>
+                    <li>2. Skipping/lompat tali (10 menit)</li>
+                    <li>3. <b>Ball Feeling 1:</b> 10 menit (2 sesi, 5 mnt kaki kiri dan 5 mnt kaki kanan)</li>
+                    <li>4. <b>Ball Feeling 2:</b> 10 menit (2 sesi, 5 mnt kaki kiri dan 5 mnt kaki kanan)</li>
+                    <li>5. Cooling down/pendinginan (5 menit)</li>
+                </ul>
+                <div class="video-buttons-container">
+                    <a class="btn-video" href="https://videotourl.com/videos/1781435944674-79d1ea76-e36f-4ede-8b66-b6fd7ffdb669.mp4" target="_blank">🎬 Video BF 1</a>
+                    <a class="btn-video" href="https://videotourl.com/videos/1781436089572-bc91c92b-0e2e-4420-818f-7a89624dc884.mp4" target="_blank">🎬 Video BF 2</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
